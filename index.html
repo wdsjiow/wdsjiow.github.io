@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal website</title>
+    <link rel="shortcut icon" type="image/png" href="http://pluspng.com/img-png/png-puppy-dog-so-cute-puppies-image-1600.png" />
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: black;}
+</style>
+<style type="text/css">
+A:link { COLOR: black; TEXT-DECORATION: none; font-weight: normal }
+A:visited { COLOR: black; TEXT-DECORATION: none; font-weight: normal }
+A:active { COLOR: black; TEXT-DECORATION: none }
+A:hover { COLOR: red; TEXT-DECORATION: none; font-weight: none }
+</style>
+<script language "JavaScript">
+  function startTime()   
+            {   
+                var today=new Date();  
+                var yyyy = today.getFullYear();    
+                var MM = today.getMonth()+1;
+                var dd = today.getDate();  
+                var hh=today.getHours();  
+                var mm=today.getMinutes(); 
+                var ss=today.getSeconds();
+                MM=checkTime(MM);
+                dd=checkTime(dd);
+                mm=checkTime(mm);   
+                ss=checkTime(ss);
+                document.getElementById('nowDateTimeSpan').innerHTML=MM+"-"+dd +"-"+ yyyy +" " + hh+":"+mm+":"+ss;   
+                setTimeout('startTime()',1000);
+            }
+            function checkTime(i)   
+            {   
+                if (i<10){
+                    i="0" + i;
+                }   
+                  return i;
+            }  
+</script>
+</head>
+<body>
+
+<audio loop autoplay controls >
+
+  <source src="Clair de Lune.mp3" type="audio/mpeg" >
+</audio>
+<h1>Hello!</h1>
+<p>Hi! My name is Tina. I am a sophomore studying electronics engineering. I graduated from TFG highscool. I like to listen to music, read novels, and watch movies in my free time. I am an animal lover and I have always wanted to have a pet, especially a pet dog.</p>
+<h2>This is my favorite kind of dog!</h2>
+<img src="http://inspirationseek.com/wp-content/uploads/2016/02/Cute-Dog-Images.jpg"alt="An extremely adorable puppy" width="256" height="160">
+<br>
+<a href="http://www.fg.tp.edu.tw/bin/home.php">This is my highschool!</a>
+<br>
+<a href="https://web.ee.ntu.edu.tw/">This is the department I major in!</a>
+<br>
+<a href="https://www.dermotkennedy.com/about">This is my favorite singer!</a>
+<br>
+<a href="https://en.wikipedia.org/wiki/A_Little_Life">This is my favorite novel!</a>
+<br>
+<a href="https://en.wikipedia.org/wiki/The_Half_of_It">This is my favorite movie!</a>
+
+<h2>Time</h2>
+
+</script>
+<body onload="startTime()">
+<p>Date/Time: <span id="nowDateTimeSpan"></span></p>
+
+
+
+
+
+
+
+</body>
+</html>
